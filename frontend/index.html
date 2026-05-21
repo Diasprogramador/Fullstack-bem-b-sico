@@ -2,23 +2,26 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-    <link rel="stylesheet" href="./styles.css">
+    <meta charset="utf-8" />
+    <title>Login - App</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
-    <h2>Login</h2>
-    <form id="loginForm">
-        <label for="usuario">Usuário:</label>
-        <input type="text" id="usuario" required>
+<body class="page-center">
+    <div class="card login-card">
+        <h1>Entrar</h1>
+        <form id="loginForm" class="form">
+            <label for="usuario">Usuário</label>
+            <input id="usuario" type="text" required />
+            <label for="senha">Senha</label>
+            <input id="senha" type="password" required />
+            <button type="submit" class="btn primary">Entrar</button>
+        </form>
+        <p class="muted">Use <strong>admin</strong> / <strong>123</strong> para teste</p>
+    </div>
 
-        <label for="senha">Senha:</label>
-        <input type="password" id="senha" required>
-
-        <button type="submit">Entrar</button>
-    </form>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 
 </html>
