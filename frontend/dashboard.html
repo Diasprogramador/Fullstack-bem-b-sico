@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <h2>Gerenciamento de Usuários</h2>
+
+    <!-- Botão de logout -->
+    <button onclick="logout()">Sair</button>
+
+    <!-- Formulário de cadastro/edição -->
+    <form id="formCadastro">
+        <input type="hidden" id="id">
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+
+        <button type="submit">Salvar</button>
+    </form>
+
+    <!-- Tabela de usuários -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="tabelaUsuarios"></tbody>
+    </table>
+</body>
+<script src="script.js"></script>
+
+</html>
